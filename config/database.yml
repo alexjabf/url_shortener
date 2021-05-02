@@ -1,0 +1,32 @@
+development:
+    adapter: <%= ENV['DB_ADAPTER_LOCAL_DEVELOPMENT'] %>
+    encoding: <%= ENV['DB_ENCODING_LOCAL_DEVELOPMENT'] %>
+    host: <%= ENV['DB_HOST_LOCAL_DEVELOPMENT'] %>
+    port: <%= ENV['DB_PORT_LOCAL_DEVELOPMENT'] %>
+    database: <%= ENV['DB_NAME_LOCAL_DEVELOPMENT'] %>
+    username: <%= ENV['DB_USERNAME_LOCAL_DEVELOPMENT'] %>
+    password: <%= ENV['DB_PASSWORD_LOCAL_DEVELOPMENT'] %>
+    schema_search_path: <%= ENV['DB_SCHEMA_SEARCH_PATH_LOCAL_DEVELOPMENT'] %>
+    pool: <%= ENV['DB_POOL_DEVELOPMENT'] %>
+
+test:
+    adapter: <%= ENV['DB_ADAPTER_LOCAL_TEST'] %>
+    encoding: <%= ENV['DB_ENCODING_LOCAL_TEST'] %>
+    host: <%= ENV['DB_HOST_LOCAL_TEST'] %>
+    port: <%= ENV['DB_PORT_LOCAL_TEST'] %>
+    database: <%= ENV['DB_NAME_LOCAL_TEST'] %>
+    username: <%= ENV['DB_USERNAME_LOCAL_TEST'] %>
+    password: <%= ENV['DB_PASSWORD_LOCAL_TEST'] %>
+    schema_search_path: <%= ENV['DB_SCHEMA_SEARCH_PATH_LOCAL_TEST'] %>
+    pool: <%= ENV['DB_POOL_TEST'] %>
+
+production:
+    adapter: <%= ENV['DB_ADAPTER_LOCAL_PRODUCTION'] %>
+    encoding: <%= ENV['DB_ENCODING_LOCAL_PRODUCTION'] %>
+    host: <%= ENV['DB_HOST_LOCAL_PRODUCTION'] %>
+    port: <%= ENV['DB_PORT_LOCAL_PRODUCTION'] %>
+    database: <%= ENV['DB_NAME_LOCAL_PRODUCTION'] %>
+    username: <%= ENV['DB_USERNAME_LOCAL_PRODUCTION'] %>
+    password: <%= ENV['DB_PASSWORD_LOCAL_PRODUCTION'] %>
+    schema_search_path: <%= ENV['DB_SCHEMA_SEARCH_PATH_LOCAL_PRODUCTION'] %>
+    pool: <%= ENV['DB_POOL_PRODUCTION'] %>  
